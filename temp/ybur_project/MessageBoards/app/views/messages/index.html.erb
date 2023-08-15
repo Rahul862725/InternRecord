@@ -1,0 +1,19 @@
+<%# <p> Pinku Didiji</p> %>
+<div class="container">
+<div class="mess_container">
+<% @message.each do |message|%>
+   <div class ="mess">
+   <h2><%=  message.title %></h2>
+<%= link_to "View Message", message_path(message.id) , class: "btn btn-primary" %>
+ </div>
+<% end %>
+  
+</div>
+</div>
+
+ 
+
+
+
+
+ 

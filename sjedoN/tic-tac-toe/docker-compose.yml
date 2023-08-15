@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: TicTac1
+    image: tic-tac-1
+    build: 
+      context: .
+      target: builder
+    ports:
+      - 4000:4000
+
